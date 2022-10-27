@@ -41,7 +41,7 @@
           </div>
 
           <div class="desc" v-if="user">
- 
+
           </div>
           <div class="actions">
             <button><i class="far fa-heart"></i></button>
@@ -49,10 +49,10 @@
             <button><i class="fas fa-user-friends"></i></button>
           </div>
         </div>
-
       </div>
     </div>
   </div>
+  <HelloWorld/>
 
 </template>
 
@@ -78,10 +78,11 @@ export default {
     }
   },
   components: {
-    vueSelect
+    vueSelect,
   },
   mounted() {
     this.fetchUsers()
+    console.log(require('vue'))
   }
 }
 </script>
